@@ -4,7 +4,6 @@ metadata:
   labels:
     app: springboot-app
   name: springboot-app
-
 spec:
   replicas: 4
   selector:
@@ -14,14 +13,12 @@ spec:
     metadata:
       labels:
         app: springboot-app
-   spec:
-    
+    spec:
       containers:
       - name: my-springboot-app
-        image: nitinmanzire/nitinimage:
+        image: nitinmanzire/nitinmanzire:27
         imagePullPolicy: Always
-    
-    ports:
+        ports:
         - containerPort: 8085
           name: http
           protocol: TCP
