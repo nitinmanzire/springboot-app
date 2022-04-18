@@ -15,12 +15,12 @@ spec:
       labels:
         app: springboot-app
     spec:
+      imagePullSecrets:
+         - name: regcred
       containers:
       - name: my-springboot-app
         image: nitinmanzire/nitinimage
         imagePullPolicy: Always
-      imagePullSecrets:
-         - name: regcred
       ports:
         - containerPort: 8085
           name: http
