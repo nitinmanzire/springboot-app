@@ -4,7 +4,7 @@ metadata:
   labels:
     app: springboot-app
   name: springboot-app
-   name: regcred
+
 spec:
   replicas: 4
   selector:
@@ -18,7 +18,6 @@ spec:
       containers:
       - name: my-springboot-app
         image: nitinmanzire/nitinimage
-        
         imagePullPolicy: Always
         imagePullSecrets:
             - name: regcred
