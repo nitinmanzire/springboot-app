@@ -14,14 +14,14 @@ spec:
     metadata:
       labels:
         app: springboot-app
-    spec:
-      imagePullSecrets:
-         - name: regcred
+   spec:
+    
       containers:
       - name: my-springboot-app
-        image: nitinmanzire/nitinimage
+        image: nitinmanzire/nitinimage:
         imagePullPolicy: Always
-      ports:
+    
+    ports:
         - containerPort: 8085
           name: http
           protocol: TCP
