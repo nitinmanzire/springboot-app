@@ -19,9 +19,9 @@ spec:
       - name: my-springboot-app
         image: nitinmanzire/nitinimage
         imagePullPolicy: Always
-        imagePullSecrets:
+      imagePullSecrets:
          - name: regcred
-        ports:
+      ports:
         - containerPort: 8085
           name: http
           protocol: TCP
